@@ -15,6 +15,7 @@ waveform_generate(&wave1,1,2000);// 然后输出高电平2000tick
 waveform_generate(&wave1,0,3000);// 最后输出低电平3000tick
 ```
 上述代码实现了mcu的23引脚先低电平输出1000tick，然后高电平2000tick，最后低电平输出3000tick，tick的单位为定时器中断触发一次的时间。
+
 调用
 ```c
 wave_queue_is_empty(&wave1);
